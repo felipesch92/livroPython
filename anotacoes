@@ -1,0 +1,8 @@
+Comunidade Python Brasil
+-------
+n = 8
+m = 7
+a = n > m
+print(a)
+#a == True
+-------
