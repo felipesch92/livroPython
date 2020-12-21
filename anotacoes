@@ -9,3 +9,29 @@ print(a)
 d = 50
 print(f'R$ {d:3.3f}')
 ------
+Listas são tipos de variáveis que permitem o armazenamento de vários valores, acessados por um índice.
+Podendo conter outras listas dentro delas
+Uma lista em python é um objeto, e quando atribuimos um objeto a outro estamos copiando a mesma referencia da lista
+e nao seus dados em si. Exemplo:
+l = [1, 2, 3]
+v = l
+v[0] = 5
+fazendo isso, o l[0] passa a ter o valor 5 também.
+nesse caso v e l são a mesma lista.
+Para criar uma cópia indepentende devemos atribuir da seguinte maneira:
+v = l[:]
+MÉTODO É UMA FUNÇÃO DO OBJETO! Exemplo:
+v.append(valor)
+append é uma função do objeto V
+Para que serve comando pop() ?
+pop(0) retira o primeiro elemento
+pop(-1) retira o último elemento
+A função enumerate:
+l = [5, 9, 15]
+for x, e in enumerate(l)
+    print(f'[{x}] {e}')
+[0] 5
+[1] 9
+[2] 15
+Gera uma tupla, onde primeiro valor é o índice e o segundo é o elemento da lista.
+Dicionário e composto de um conjunto de chaves e valores.
