@@ -34,4 +34,15 @@ for x, e in enumerate(l)
 [1] 9
 [2] 15
 Gera uma tupla, onde primeiro valor é o índice e o segundo é o elemento da lista.
+
 Dicionário e composto de um conjunto de chaves e valores.
+
+Acessando valores de uma lista:
+pessoas = [['Felipe', 28], ['Dolores', 50], ['Ana', 22]]
+for p in pessoas:
+    nome, idade = p
+    print(f'Nome: {nome}, Idade: {idade}')
+
+Para declarar função utiliza-se a instrução def
+
+Arquivos!
