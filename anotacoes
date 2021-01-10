@@ -46,3 +46,31 @@ for p in pessoas:
 Para declarar função utiliza-se a instrução def
 
 Arquivos!
+arquivo = open('numeros.txt', 'w')
+open('nome_arquivo.txt', 'parametro')
+parametro:
+'r'       open for reading (default)
+'w'       open for writing, truncating the file first
+'x'       create a new file and open it for writing
+'a'       open for writing, appending to the end of the file if it exists
+'b'       binary mode
+'t'       text mode (default)
+'+'       open a disk file for updating (reading and writing)
+
+Comando with permite criarmos um contexto, um bloco em que um objeto é válido.
+No fim do bloco with o contexto é destruido.
+
+__init__ é o contrutor ou inicializador
+__init__ é o objeto construtor da classe
+Um método construtor é chamado sempre que um objeto da classe é instanciado
+É o construtor que inicializa nosso novo objeto com seus valores-padrão
+
+Métodos nada mais são que funções associadas a classe
+
+--------------
+Banco de Dados
+--------------
+
+---------------------
+MASTERCARD SURPREENDA
+---------------------
