@@ -70,7 +70,41 @@ Métodos nada mais são que funções associadas a classe
 --------------
 Banco de Dados
 --------------
+- Para criar tabela:
+cursor.execute('''
+    create table if not exists precos(
+    nome text,
+    valor text)
+''')
 
----------------------
-MASTERCARD SURPREENDA
----------------------
+- Para inserir na tabela:
+cursor.execute('''
+        insert into precos(nome, valor)
+            values(?, ?)
+''', ("Feijão", "1.35"))
+
+- Para atualizar valor na tabela:
+cursor.execute('''
+            update precos
+            set valor = ?
+            where nome = ?
+        ''', (prec, prod))
+
+- Para mostrar na tela os dados da tabela:
+    for reg in con.execute('select * from precos'):
+        print(f'Produto: {reg[0]} Valor: {float(reg[1]):.2f}')
+
+- Para excluir linha da tabela:
+cursor.execute('''
+            delete from precos
+            where nome = ?
+        ''', (prod,))
+
+Visitar o site unidev.com.br
+
+Estudar polimorfismo, interfaces e padrões de projeto (design patterns)
+
+python.org.br/lista-de-discussoes
+
+groups.google.com/group/django-brasil/?pli=1
+
